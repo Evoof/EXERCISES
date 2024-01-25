@@ -1,0 +1,58 @@
+/* h1 {
+    font-size: 5rem;
+}
+h1::before {
+    content: 'before!';
+}
+h1::after {
+    content: 'After!';
+} */
+/* blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    width: 50%;
+}
+blockquote::before {
+    content: open-quote;
+    top: 50px;
+    left: -10px;
+    
+}
+blockquote::after {
+    content: close-quote;
+}
+blockquote::after,
+blockquote::before {
+    font-size: 6rem;
+    position: absolute;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.box {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: sans-serif;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box::before {
+    content: "";
+    height: 306px;
+    width: 306px;
+    background: linear-gradient(cyan, magenta);
+    position: absolute;
+    z-index: -1;
+}

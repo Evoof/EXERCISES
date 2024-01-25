@@ -1,0 +1,13 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: olive;
+    display: inline-block;
+    position: relative;
+}  
+.box span {
+    color: white;
+    background-color: orangered;
+    position: absolute;
+    right: 0;
+}
